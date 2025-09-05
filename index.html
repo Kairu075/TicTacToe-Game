@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe 🎮</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+  <!-- Theme Toggle (Top Right) -->
+  <div class="topbar">
+    <label class="switch">
+      <input type="checkbox" id="themeToggle">
+      <span class="slider">
+        <span class="icon">🌞</span>
+        <span class="icon">🌙</span>
+        <span class="circle"></span>
+      </span>
+    </label>
+  </div>
+
+  <div class="container">
+    <h1>Tic Tac Toe 🎮</h1>
+
+    <!-- Mode Selection -->
+    <div class="mode-select">
+      <button id="pvpBtn" class="active">👥 PvP</button>
+      <button id="cpuBtn">💻 vs CPU</button>
+    </div>
+
+    <!-- Difficulty (only shows in CPU mode) -->
+    <div class="difficulty" id="difficulty">
+      <label><input type="radio" name="level" value="easy" checked> Easy</label>
+      <label><input type="radio" name="level" value="medium"> Medium</label>
+      <label><input type="radio" name="level" value="hard"> Hard</label>
+    </div>
+
+    <!-- Board -->
+    <div class="board" id="board"></div>
+
+    <!-- Status -->
+    <p id="status">Player X's turn</p>
+
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+      <p>X Wins: <span id="xWins">0</span></p>
+      <p>O Wins: <span id="oWins">0</span></p>
+      <p>Draws: <span id="draws">0</span></p>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="newGame">🔄 New Game</button>
+      <button id="resetScore">🧹 Reset Score</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
